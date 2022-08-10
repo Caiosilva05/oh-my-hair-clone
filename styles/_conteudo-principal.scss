@@ -1,7 +1,7 @@
 .conteudo-principal {
-    width: 382px;
     background-color: #fff;
     margin: 0 16px 15px 16px;
+    height: 1500px;
 }
 
 .card-body {
@@ -42,7 +42,7 @@
 }
 
 .text-card {
-    color: #9c324d;
+    color: #585672;
     font-weight: 600;
     font-size: 18px;
     line-height: 127%;
@@ -149,6 +149,9 @@
     width: 147px;
     height: 69px;
     margin: 10px 16px 0 20px;
+    &:hover {
+        color: #9c324d;
+    }
 }
 
 .icons-mais-lidos {
@@ -158,39 +161,4 @@
     justify-content: space-between;
     margin-left: 20px;
     margin-top: 50px;
-}
-
-.marca {
-    position: absolute;
-    width: 100%;
-    height: 42px;
-    top: 1875px;
-    background-color: #ca3f89;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.insta {
-    width: 100%;
-    height: 57.88px;
-    background: linear-gradient(
-        88.12deg,
-        #feda75 6.77%,
-        #fa7e1e 32.29%,
-        #d62976 54.69%,
-        #962fbf 77.6%,
-        #4f5bd5 100%
-    );
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
-    text-decoration-line: underline;
 }

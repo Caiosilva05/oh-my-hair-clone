@@ -1,0 +1,143 @@
+.conteudo-footer {
+    height: 674.88px;
+}
+
+.marca {
+    width: 100%;
+    height: 42px;
+    background-color: #ca3f89;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.insta {
+    width: 100%;
+    height: 57.88px;
+    background: linear-gradient(
+        88.12deg,
+        #feda75 6.77%,
+        #fa7e1e 32.29%,
+        #d62976 54.69%,
+        #962fbf 77.6%,
+        #4f5bd5 100%
+    );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    text-decoration-line: underline;
+}
+
+.linhas-de-produto {
+    width: 414px;
+    display: flex;
+    color: #585672;
+}
+
+.titulo-footer {
+    font-weight: 600;
+    margin: 26px 0 0 16px;
+    font-size: 18px;
+}
+
+.img-arrow-down {
+    margin-left: 80px;
+}
+
+.lista-produtos a {
+    color: #585672;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+#link1 {
+    margin: 26px 0 16px -16px;
+}
+
+#link2 {
+    margin: 0 0 16px -16px;
+}
+
+#link3 {
+    margin: 0 0 16px -16px;
+}
+
+.curso {
+    background-color: #6e4480;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 210px;
+}
+
+.texto-curso {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 127%;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+
+.btn-inscreva {
+    background: #ca3f89;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 11px;
+    border: none;
+    margin: 0 44.5px 36px 44.5px;
+
+    a {
+        margin: 0 auto;
+        width: 96px;
+        height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.footer-final {
+    background-color: #9c324d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: #fff;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.titulo-footer {
+    margin-top: 28px;
+}
+
+.links-footer {
+    margin: 27px 16px 35px 16px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 127%;
+    text-align: center;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+}

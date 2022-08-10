@@ -5,5 +5,7 @@ $(function () {
         slidesToScroll: 1,
         prevArrow: $('#voltar'),
         nextArrow: $('#avancar'),
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 });
