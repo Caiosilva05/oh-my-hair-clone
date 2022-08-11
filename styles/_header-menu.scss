@@ -3,8 +3,9 @@
     justify-content: space-between;
     background-color: #fff;
     padding-bottom: 20px;
+    position: relative;
 
-    .botao-menu {
+    #botao-menu {
         display: block;
         width: 36px;
         height: 36px;
@@ -13,19 +14,25 @@
     }
 
     .nav-mobile {
-        display: block;
+        display: none;
         position: relative;
+        z-index: 2;
     }
 
     .lista-links {
         font-size: 16px;
         font-weight: 600;
         color: hsla(244, 14%, 39%, 1);
+        display: none;
+        position: absolute;
     }
 
     nav.ativo {
         display: flex;
-        position: absolute;
+        position: relative;
+        background-color: #000;
+        width: 50%;
+        height: 800px;
     }
 
     .titulo-principal {

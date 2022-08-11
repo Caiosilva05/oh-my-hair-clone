@@ -22,8 +22,9 @@ a {
   justify-content: space-between;
   background-color: #fff;
   padding-bottom: 20px;
+  position: relative;
 }
-.header .botao-menu {
+.header #botao-menu {
   display: block;
   width: 36px;
   height: 36px;
@@ -31,17 +32,23 @@ a {
   margin-left: 13px;
 }
 .header .nav-mobile {
-  display: block;
+  display: none;
   position: relative;
+  z-index: 2;
 }
 .header .lista-links {
   font-size: 16px;
   font-weight: 600;
   color: hsl(244deg, 14%, 39%);
+  display: none;
+  position: absolute;
 }
 .header nav.ativo {
   display: flex;
-  position: absolute;
+  position: relative;
+  background-color: #000;
+  width: 50%;
+  height: 800px;
 }
 .header .titulo-principal {
   text-align: center;
@@ -79,38 +86,24 @@ a {
   color: hsl(345deg, 51%, 40%);
 }
 
-.watch-slider {
-  position: relative;
+#btn-indicador {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.texto-carrosel-principal {
-  position: absolute;
-  color: #fff;
-  z-index: 1;
-  width: 307px;
-  height: 82.45px;
-  top: 150px;
-  left: 58px;
-  font-size: 30px;
+.img-carrosel {
+  width: 100%;
+  max-width: 500px;
+}
+
+.texto-carrosel {
+  text-align: left;
+  margin-bottom: 3.5rem;
   font-weight: 700;
-  line-height: 30.9px;
+  font-size: 30px;
+  line-height: 103%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
-}
-
-.buttons-slider {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  color: #fff;
-  top: 190px;
-}
-.buttons-slider #voltar {
-  position: relative;
-  left: 30px;
-}
-.buttons-slider #avancar {
-  position: relative;
-  margin-left: 370px;
 }
 
 .back-input {
@@ -133,89 +126,34 @@ a {
 .conteudo-principal {
   background-color: #fff;
   margin: 0 16px 15px 16px;
-  height: 1500px;
+  height: 1190px;
 }
 
-.card-body {
-  width: 100%;
+.mais-lidos {
+  display: block;
 }
 
-.titulo-mais-recentes {
+.titulos-mais-lidos {
   color: #585672;
-  position: relative;
-}
-
-#mais-recente-titulo {
-  position: absolute;
-  top: 32px;
-  left: 8px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-#ver-tudo-recente a {
-  color: #585672;
-  position: absolute;
-  top: 44.5px;
-  right: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.carrosel-card1 {
-  width: 100px;
-  height: 450px;
-  top: 90px;
-  margin: 0 auto;
-  border: 1px solid #bfbfbf;
-  box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
-.text-card {
-  color: #585672;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 127%;
-  width: 149px;
-  height: 92px;
-  margin: 10px 16px 16px 16px;
-}
-
-.icones-cards {
+  padding-top: 50px;
+  margin: 0 8px 16px 8px;
   display: flex;
-  width: 149px;
-  align-items: center;
   justify-content: space-between;
 }
 
-.titulo-mais-lidos {
-  color: #585672;
-  position: relative;
-}
-
 #mais-lidos-titulo {
-  position: absolute;
-  top: 180px;
-  left: 8px;
   font-size: 28px;
   font-weight: 600;
 }
 
 #ver-tudo-lidos a {
   color: #585672;
-  position: absolute;
-  top: 192.5px;
-  right: 8px;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
 }
 
 .mais-lidos-cards {
-  position: absolute;
-  top: 1060px;
   display: grid;
   width: 366px;
   height: 186px;
@@ -223,11 +161,10 @@ a {
   border-radius: 5px;
   margin: 0 8px;
   grid-template-columns: 1fr 1fr;
+  cursor: pointer;
 }
 
 .mais-lidos-cards2 {
-  position: absolute;
-  top: 1260px;
   display: grid;
   width: 366px;
   height: 186px;
@@ -235,11 +172,10 @@ a {
   border-radius: 5px;
   margin: 0 8px;
   grid-template-columns: 1fr 1fr;
+  cursor: pointer;
 }
 
 .mais-lidos-cards3 {
-  position: absolute;
-  top: 1460px;
   display: grid;
   width: 366px;
   height: 186px;
@@ -247,11 +183,10 @@ a {
   border-radius: 5px;
   margin: 0 8px;
   grid-template-columns: 1fr 1fr;
+  cursor: pointer;
 }
 
 .mais-lidos-cards4 {
-  position: absolute;
-  top: 1660px;
   display: grid;
   width: 366px;
   height: 186px;
@@ -259,6 +194,7 @@ a {
   border-radius: 5px;
   margin: 0 8px;
   grid-template-columns: 1fr 1fr;
+  cursor: pointer;
 }
 
 .text-cards-mais-lidos span {
@@ -296,8 +232,97 @@ a {
   margin-top: 50px;
 }
 
+.card {
+  margin-top: 50px;
+}
+
+.titulos-mais-recentes {
+  color: #585672;
+  padding-top: 32px;
+  margin: 0 8px 16px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mais-recente-titulo {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#ver-tudo-recente a {
+  color: #585672;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.slick-slide {
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.img-carrosel2 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.titulo-carrosel2 {
+  margin: 14px 16px 16px 16px;
+  width: 149px;
+  height: 92px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #585672;
+  line-height: 127%;
+}
+.titulo-carrosel2:hover {
+  color: #9c324d;
+}
+
+.item-inner {
+  margin: 0 16px;
+  width: 181px;
+  height: 327px;
+}
+
+.item-inner {
+  border: 1px solid #bfbfbf;
+  box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.icons-carrosel2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-img {
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.time {
+  margin-right: 45px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.like-img {
+  margin-bottom: 9px;
+}
+
+.like {
+  margin-bottom: 6px;
+  margin-right: 16px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
 .conteudo-footer {
+  margin-top: 160px;
   height: 674.88px;
+  display: block;
 }
 
 .marca {
@@ -384,14 +409,11 @@ a {
   border-radius: 50px;
   padding: 6px 11px;
   border: none;
-  margin: 0 44.5px 36px 44.5px;
-}
-.btn-inscreva a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 11px;
   margin: 0 auto;
-  width: 96px;
-  height: 20px;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .footer-final {
@@ -433,11 +455,20 @@ a {
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  #menu-mob {
+    display: none;
+  }
+  #botao-menu {
+    display: none;
+  }
+  .show-off input {
+    display: none;
+  }
   .lista-links {
     display: none;
   }
-  .show-off {
+  .carrosel {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

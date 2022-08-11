@@ -1,89 +1,34 @@
 .conteudo-principal {
     background-color: #fff;
     margin: 0 16px 15px 16px;
-    height: 1500px;
+    height: 1190px;
 }
 
-.card-body {
-    width: 100%;
+.mais-lidos {
+    display: block;
 }
 
-.titulo-mais-recentes {
+.titulos-mais-lidos {
     color: #585672;
-    position: relative;
-}
-
-#mais-recente-titulo {
-    position: absolute;
-    top: 32px;
-    left: 8px;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-#ver-tudo-recente a {
-    color: #585672;
-    position: absolute;
-    top: 44.5px;
-    right: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.carrosel-card1 {
-    width: 100px;
-    height: 450px;
-    top: 90px;
-    margin: 0 auto;
-    border: 1px solid #bfbfbf;
-    box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-
-.text-card {
-    color: #585672;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 127%;
-    width: 149px;
-    height: 92px;
-    margin: 10px 16px 16px 16px;
-}
-
-.icones-cards {
+    padding-top: 50px;
+    margin: 0 8px 16px 8px;
     display: flex;
-    width: 149px;
-    align-items: center;
     justify-content: space-between;
 }
 
-.titulo-mais-lidos {
-    color: #585672;
-    position: relative;
-}
-
 #mais-lidos-titulo {
-    position: absolute;
-    top: 180px;
-    left: 8px;
     font-size: 28px;
     font-weight: 600;
 }
 
 #ver-tudo-lidos a {
     color: #585672;
-    position: absolute;
-    top: 192.5px;
-    right: 8px;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .mais-lidos-cards {
-    position: absolute;
-    top: 1060px;
     display: grid;
     width: 366px;
     height: 186px;
@@ -91,11 +36,10 @@
     border-radius: 5px;
     margin: 0 8px;
     grid-template-columns: 1fr 1fr;
+    cursor: pointer;
 }
 
 .mais-lidos-cards2 {
-    position: absolute;
-    top: 1260px;
     display: grid;
     width: 366px;
     height: 186px;
@@ -103,11 +47,10 @@
     border-radius: 5px;
     margin: 0 8px;
     grid-template-columns: 1fr 1fr;
+    cursor: pointer;
 }
 
 .mais-lidos-cards3 {
-    position: absolute;
-    top: 1460px;
     display: grid;
     width: 366px;
     height: 186px;
@@ -115,11 +58,10 @@
     border-radius: 5px;
     margin: 0 8px;
     grid-template-columns: 1fr 1fr;
+    cursor: pointer;
 }
 
 .mais-lidos-cards4 {
-    position: absolute;
-    top: 1660px;
     display: grid;
     width: 366px;
     height: 186px;
@@ -127,6 +69,7 @@
     border-radius: 5px;
     margin: 0 8px;
     grid-template-columns: 1fr 1fr;
+    cursor: pointer;
 }
 
 .text-cards-mais-lidos span {

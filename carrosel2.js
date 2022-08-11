@@ -1,7 +1,5 @@
-$(function () {
-    $('.watch-slider2').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
+$('.slider').slick({
+    centerMode: true,
+    prevArrow: null,
+    nextArrow: null,
 });

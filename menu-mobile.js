@@ -1,4 +1,4 @@
-const botaoMenu = document.querySelector('.botao-menu');
+const botaoMenu = document.querySelector('#botao-menu');
 
 function toggleMenu() {
     const nav = document.querySelector('.nav-mobile');

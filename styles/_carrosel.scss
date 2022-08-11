@@ -1,35 +1,19 @@
-.watch-slider {
-    position: relative;
+#btn-indicador {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
-.texto-carrosel-principal {
-    position: absolute;
-    color: #fff;
-    z-index: 1;
-    width: 307px;
-    height: 82.45px;
-    top: 150px;
-    left: 58px;
-    font-size: 30px;
+.img-carrosel {
+    width: 100%;
+    max-width: 500px;
+}
+
+.texto-carrosel {
+    text-align: left;
+    margin-bottom: 3.5rem;
     font-weight: 700;
-    line-height: 30.9px;
+    font-size: 30px;
+    line-height: 103%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
-}
-
-.buttons-slider {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    color: #fff;
-    top: 190px;
-
-    #voltar {
-        position: relative;
-        left: 30px;
-    }
-
-    #avancar {
-        position: relative;
-        margin-left: 370px;
-    }
 }

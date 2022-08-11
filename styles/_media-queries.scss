@@ -1,9 +1,21 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    #menu-mob {
+        display: none;
+    }
+
+    #botao-menu {
+        display: none;
+    }
+
+    .show-off input {
+        display: none;
+    }
+
     .lista-links {
         display: none;
     }
 
-    .show-off {
+    .carrosel {
         display: none;
     }
 }

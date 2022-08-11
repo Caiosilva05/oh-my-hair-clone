@@ -1,5 +1,7 @@
 .conteudo-footer {
+    margin-top: 160px;
     height: 674.88px;
+    display: block;
 }
 
 .marca {
@@ -92,15 +94,11 @@
     border-radius: 50px;
     padding: 6px 11px;
     border: none;
-    margin: 0 44.5px 36px 44.5px;
-
-    a {
-        margin: 0 auto;
-        width: 96px;
-        height: 20px;
-        font-weight: 400;
-        font-size: 16px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 11px;
+    margin: 0 auto;
 }
 
 .footer-final {

@@ -18,8 +18,8 @@
 <body>
     <header>
         <section class="header">
+            <span id="botao-menu"><img src="/assets/menu.png" alt="" id="menu-mob"></span>
             <div class='show-off'>
-                <img src="/assets/menu.png" alt="" class="botao-menu">
                 <nav class="nav-mobile">
                     <span class="bem-vindo">Olá, seja bem-vindo.</span> <span class="login"><a href="#">Fazer login</a></span>
                     <input type="search" placeholder="O que você está buscando?">
@@ -44,21 +44,40 @@
     <main>
 
         <section class="carrosel">
-            <div class="slider-mobile">
-                <h2 class="texto-carrosel-principal">Quan etiam rhoncus cursus</h2>
-                <div class="watch-slider">
-                    <img class="slide" id="slide1" src="assets/img-carrosel1.png" alt="">
-                    <img class="slide" id="slide2" src="assets/img-carrosel2.png" alt="">
-                    <img class="slide" id="slide3" src="assets/img-carrosel3.png" alt="">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" id="btn-indicador" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="btn-indicador"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" id="btn-indicador"></button>
                 </div>
-                <div class="buttons-slider">
-                    <div id="voltar" class="buttons">
-                        <i class="fas fa-chevron-left"></i>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img-carrosel1.png" class="d-block w-100 img-carrosel1" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel">Quam etiam rhoncus cursus 1</h2>
+                        </div>
                     </div>
-                    <div id="avancar" class="buttons">
-                        <i class="fas fa-chevron-right"></i>
+                    <div class="carousel-item">
+                        <img src="/assets/img-carrosel1.png" class="d-block w-100 img-carrosel1" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel">Quam etiam rhoncus cursus 2</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img-carrosel1.png" class="d-block w-100 img-carrosel1" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel">Quam etiam rhoncus cursus 3</h2>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
@@ -67,24 +86,59 @@
         </div>
 
         <section class="conteudo-principal">
-            <div class="titulo-mais-recentes">
+            <div class="titulos-mais-recentes">
                 <h2 id="mais-recente-titulo">Mais recentes</h2>
                 <h3 id="ver-tudo-recente"><a href="#">Ver tudo</a></h3>
             </div>
 
-            <section class="card carrosel-card1" style="width: 18rem;">
-                <img src="/assets/raiz-volumosa-3 2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="card-text text-card">Como controlar raízes volumosas em cabelos...</h1>
-                    <div class="icones-cards">
-                        <span><img src="/assets/book-open.svg" alt=""> 5 min</span>
-                        <span><img src="/assets/like.svg" alt=""> 100k</span>
+            <section class="segundo-carrosel">
+
+                <div class="card">
+                    <div class="slider">
+                        <div class="item">
+                            <div class="item-inner">
+                                <img src="/assets/raiz-volumosa-3 2.png" alt="" class="img-carrosel2">
+                                <h3 class="titulo-carrosel2">Como controlar raízes volumosas em cabelos...</h3>
+                                <div class="icons-carrosel2">
+                                    <img src="/assets/book-open.svg" alt="" class="time-img">
+                                    <span class="tempo-leitura time"> 5 min</span>
+                                    <img src="/assets/like.svg" alt="" class="like-img">
+                                    <span class="curtidas like"> 100k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-inner">
+                                <img src="/assets/raiz-volumosa-3 2.png" alt="" class="img-carrosel2">
+                                <h3 class="titulo-carrosel2">Ultrices eget eu rutrum vestibulum. Ut ut nam.</h3>
+                                <div class="icons-carrosel2">
+                                    <img src="/assets/book-open.svg" alt="" class="time-img">
+                                    <span class="tempo-leitura time"> 5 min</span>
+                                    <img src="/assets/like.svg" alt="" class="like-img">
+                                    <span class="curtidas like"> 100k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-inner">
+                                <img src="/assets/raiz-volumosa-3 2.png" alt="" class="img-carrosel2">
+                                <h3 class="titulo-carrosel2">Dolor sit amet augue</h3>
+                                <div class="icons-carrosel2">
+                                    <img src="/assets/book-open.svg" alt="" class="time-img">
+                                    <span class="tempo-leitura time"> 5 min</span>
+                                    <img src="/assets/like.svg" alt="" class="like-img">
+                                    <span class="curtidas like"> 100k</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </section>
 
+
             <section class="mais-lidos">
-                <div class="titulo-mais-lidos">
+                <div class="titulos-mais-lidos">
                     <h2 id="mais-lidos-titulo">Mais lidos</h2>
                     <h3 id="ver-tudo-lidos"><a href="#">Ver tudo</a></h3>
                 </div>
@@ -175,7 +229,6 @@
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/06c9d50f16.js" crossorigin="anonymous"></script>
     <script src="menu-mobile.js"></script>
-    <script src="carrosel1.js"></script>
     <script src="carrosel2.js"></script>
 </body>
 
