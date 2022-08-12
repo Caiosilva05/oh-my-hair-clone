@@ -17,59 +17,62 @@ a {
   text-decoration: none;
 }
 
-.header {
+.header-desktop {
+  display: none;
+}
+
+.header-mobile {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding-bottom: 20px;
   position: relative;
 }
-.header #botao-menu {
-  display: block;
+.header-mobile #botao-menu {
   width: 36px;
   height: 36px;
   margin-top: 21px;
   margin-left: 13px;
 }
-.header .nav-mobile {
+.header-mobile .nav-mobile {
   display: none;
   position: relative;
   z-index: 2;
 }
-.header .lista-links {
+.header-mobile .lista-links {
   font-size: 16px;
   font-weight: 600;
   color: hsl(244deg, 14%, 39%);
   display: none;
   position: absolute;
 }
-.header nav.ativo {
+.header-mobile nav.ativo {
   display: flex;
   position: relative;
   background-color: #000;
   width: 50%;
   height: 800px;
 }
-.header .titulo-principal {
+.header-mobile .titulo-principal {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
   margin-top: 21px;
 }
-.header .titulo-principal .span1 {
+.header-mobile .titulo-principal .span1 {
   color: hsl(261deg, 29%, 56%);
 }
-.header .titulo-principal .span2 {
+.header-mobile .titulo-principal .span2 {
   color: hsl(195deg, 65%, 75%);
 }
-.header .titulo-principal .span3 {
+.header-mobile .titulo-principal .span3 {
   color: hsl(41deg, 69%, 62%);
 }
-.header .titulo-principal .exclamacao {
+.header-mobile .titulo-principal .exclamacao {
   color: hsl(126deg, 25%, 41%);
 }
-.header .botao-inscreva {
+.header-mobile .botao-inscreva {
   border-radius: 5px;
   border: none;
   background: #ffc425;
@@ -79,13 +82,77 @@ a {
   margin-top: 27px;
   font-size: 11px;
 }
-.header .botao-inscreva .inscreva-link {
+.header-mobile .botao-inscreva .inscreva-link {
   color: hsl(198deg, 35%, 19%);
 }
-.header .botao-inscreva .inscreva-link:hover {
+.header-mobile .botao-inscreva .inscreva-link:hover {
   color: hsl(345deg, 51%, 40%);
 }
 
+@media screen and (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+  .header-desktop {
+    display: block;
+    background: #fff;
+    padding: 20px 0;
+  }
+  .display-flex-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulo-principal-desktop {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 165px;
+  }
+  .titulo-principal-desktop .span1 {
+    color: hsl(261deg, 29%, 56%);
+  }
+  .titulo-principal-desktop .span2 {
+    color: hsl(195deg, 65%, 75%);
+  }
+  .titulo-principal-desktop .span3 {
+    color: hsl(41deg, 69%, 62%);
+  }
+  .titulo-principal-desktop .exclamacao {
+    color: hsl(126deg, 25%, 41%);
+  }
+  .lista-links-desktop {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 46px;
+  }
+  .lista-links-desktop a {
+    color: #585672;
+  }
+  .link-desktop {
+    padding: 20px 0;
+  }
+  .space-title {
+    margin-right: 10px;
+  }
+  .space-down {
+    margin: 0 16px 0 8px;
+  }
+  .botao-inscreva-desktop {
+    width: 93px;
+    height: 29px;
+    font-weight: 500;
+    font-size: 13px;
+    background: #ffc425;
+    border-radius: 5px;
+    border: none;
+    margin-right: 195px;
+    margin-top: 16px;
+  }
+  .botao-inscreva-desktop a {
+    color: #000;
+  }
+}
 #btn-indicador {
   width: 10px;
   height: 10px;
@@ -106,6 +173,27 @@ a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
+.carrosel-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .carrosel {
+    display: none;
+  }
+  .carrosel-desktop {
+    display: block;
+  }
+  .texto-carrosel-desktop {
+    width: 466px;
+    height: 220px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 103%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
 .back-input {
   position: relative;
   background: hsl(0deg, 0%, 95%);
@@ -233,7 +321,7 @@ a {
 }
 
 .card {
-  margin-top: 50px;
+  border: none;
 }
 
 .titulos-mais-recentes {
@@ -280,12 +368,8 @@ a {
 }
 
 .item-inner {
-  margin: 0 16px;
   width: 181px;
   height: 327px;
-}
-
-.item-inner {
   border: 1px solid #bfbfbf;
   box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -453,22 +537,4 @@ a {
   font-weight: 600;
   font-size: 13px;
   padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  #menu-mob {
-    display: none;
-  }
-  #botao-menu {
-    display: none;
-  }
-  .show-off input {
-    display: none;
-  }
-  .lista-links {
-    display: none;
-  }
-  .carrosel {
-    display: none;
-  }
 }/*# sourceMappingURL=style.css.map */

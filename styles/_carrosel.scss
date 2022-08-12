@@ -17,3 +17,27 @@
     line-height: 103%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
+
+.carrosel-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .carrosel {
+        display: none;
+    }
+
+    .carrosel-desktop {
+        display: block;
+    }
+
+    .texto-carrosel-desktop {
+        width: 466px;
+        height: 220px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 103%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

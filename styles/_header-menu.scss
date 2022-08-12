@@ -1,4 +1,8 @@
-.header {
+.header-desktop {
+    display: none;
+}
+
+.header-mobile {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -6,7 +10,6 @@
     position: relative;
 
     #botao-menu {
-        display: block;
         width: 36px;
         height: 36px;
         margin-top: 21px;
@@ -72,6 +75,84 @@
             &:hover {
                 color: hsla(345, 51%, 40%, 1);
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .header-desktop {
+        display: block;
+        background: #fff;
+        padding: 20px 0;
+    }
+
+    .display-flex-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo-principal-desktop {
+        font-size: 48px;
+        font-weight: bold;
+        margin-left: 165px;
+
+        .span1 {
+            color: hsla(261, 29%, 56%, 1);
+        }
+
+        .span2 {
+            color: hsla(195, 65%, 75%, 1);
+        }
+        .span3 {
+            color: hsla(41, 69%, 62%, 1);
+        }
+
+        .exclamacao {
+            color: hsla(126, 25%, 41%, 1);
+        }
+    }
+
+    .lista-links-desktop {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 46px;
+
+        a {
+            color: #585672;
+        }
+    }
+
+    .link-desktop {
+        padding: 20px 0;
+    }
+
+    .space-title {
+        margin-right: 10px;
+    }
+
+    .space-down {
+        margin: 0 16px 0 8px;
+    }
+
+    .botao-inscreva-desktop {
+        width: 93px;
+        height: 29px;
+        font-weight: 500;
+        font-size: 13px;
+        background: #ffc425;
+        border-radius: 5px;
+        border: none;
+        margin-right: 195px;
+        margin-top: 16px;
+
+        a {
+            color: #000;
         }
     }
 }

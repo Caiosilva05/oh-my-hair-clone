@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <section class="header">
+        <section class="header-mobile">
             <span id="botao-menu"><img src="/assets/menu.png" alt="" id="menu-mob"></span>
-            <div class='show-off'>
+            <div>
                 <nav class="nav-mobile">
                     <span class="bem-vindo">Olá, seja bem-vindo.</span> <span class="login"><a href="#">Fazer login</a></span>
                     <input type="search" placeholder="O que você está buscando?">
@@ -29,6 +29,7 @@
                 <li class="link-menu"><img src="assets/meu-cabelo.png">Meu cabelo<img src="assets/ir-links.png"></li>
                 <li class="link-menu"><img src="assets/cortes.png">Cortes<img src="assets/ir-links.png"></li>
                 <li class="link-menu"><img src="assets/coloridos.png">Coloridos<img src="assets/ir-links.png"></li>
+                <li class="link-desktop">Pentados</li>
                 <li class="link-menu"><img src="assets/dicas.png">Dicas<img src="assets/ir-links.png"></li>
                 <li class="link-menu"><img src="assets/ico-default1.png">Quiz<img src="assets/ir-links.png"></li>
                 <li class="link-menu"><img src="assets/ico-default2.png">List item<img src="assets/ir-links.png"></li>
@@ -40,6 +41,24 @@
             <h1 class="titulo-principal"><span class="span1">OH</span><span class="span2">MYY</span><span class="span3">HAIR</span><span class="exclamacao">!</span></h1>
             <button class="botao-inscreva"><a href="#" class="inscreva-link">Inscreva-se</a></button>
         </section>
+
+        <section class="header-desktop">
+            <ul class="lista-links-desktop">
+                <h1 class="titulo-principal-desktop"><span class="span1">OH</span><span class="span2">MYY</span><span class="span3">HAIR</span><span class="exclamacao">!</span></h1>
+                <div class="display-flex-links">
+                    <li class="link-desktop"><a href="">Tendências</a><img src="/assets/down.svg" alt="" class="space-down space-title"></li>
+                    <li class="link-desktop"><a href="">Meu cabelo</a><img src="/assets/down.svg" alt="" class="space-down"></li>
+                    <li class="link-desktop"><a href="">Cortes</a><img src="/assets/down.svg" alt="" class="space-down"></li>
+                    <li class="link-desktop"><a href="">Coloridos</a><img src="/assets/down.svg" alt="" class="space-down"></li>
+                    <li class="link-desktop"><a href="">Pentados</a><img src="/assets/down.svg" alt="" class="space-down"></li>
+                    <li class="link-desktop"><a href="">Dicas</a><img src="/assets/down.svg" alt="" class="space-down"></li>
+                    <button class="botao-inscreva-desktop"><a href="#" class="inscreva-link">Inscreva-se</a></button>
+                </div>
+            </ul>
+
+        </section>
+
+
     </header>
     <main>
 
@@ -79,6 +98,41 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </section>
+
+        <section class="carrosel-desktop">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/carrosel-desktop.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel-desktop">Erat mattis arcu sed consectetur leo tempus.</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/carrosel-desktop.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel-desktop">Erat mattis arcu sed consectetur leo tempus.</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/carrosel-desktop.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="texto-carrosel-desktop">Erat mattis arcu sed consectetur leo tempus.</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </section>
 
         <div class="back-input">
@@ -198,7 +252,7 @@
         <div class="insta"><img src="/assets/smile icone.png" alt="" class="smile-img">siga @ohmyhair <img src="/assets/instagram.png" alt="" class="instagram-img"></div>
 
         <div class="linhas-de-produto">
-            <h3 class="titulo-footer">Conheça nossa linha beauty <img src="/assets/down.png" alt="" class="img-arrow-down"></h3>
+            <h3 class="titulo-footer">Conheça nossa linha beauty <img src="/assets/down.svg" alt="" class="img-arrow-down"></h3>
         </div>
 
         <ul class="lista-produtos">
