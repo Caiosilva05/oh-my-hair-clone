@@ -1,0 +1,123 @@
+.mais-lidos {
+    display: block;
+}
+
+.titulos-mais-lidos {
+    color: #585672;
+    padding-top: 50px;
+    margin: 0 8px 16px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mais-lidos-titulo {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#ver-tudo-lidos a {
+    color: #585672;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mais-lidos-cards {
+    display: grid;
+    width: 366px;
+    height: 186px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin: 0 8px 16px 8px;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.mais-lidos-cards2 {
+    display: grid;
+    width: 366px;
+    height: 186px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin: 0 8px 16px 8px;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.mais-lidos-cards3 {
+    display: grid;
+    width: 366px;
+    height: 186px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin: 0 8px 16px 8px;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.mais-lidos-cards4 {
+    display: grid;
+    width: 366px;
+    height: 186px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin: 0 8px 0 8px;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.text-cards-mais-lidos span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.data-publi {
+    display: flex;
+    width: 71px;
+    height: 15px;
+    margin: 16px 92px 0 20px;
+}
+.titulo-noticia {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 127%;
+    color: #585672;
+    width: 147px;
+    height: 69px;
+    margin: 10px 16px 0 20px;
+    &:hover {
+        color: #9c324d;
+    }
+}
+
+.icons-mais-lidos {
+    display: flex;
+    width: 145px;
+    height: 84px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.mais-lidos-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #mais-lidos-titulo {
+        margin-left: 16px;
+    }
+
+    #ver-tudo-lidos {
+        margin-right: 16px;
+    }
+
+    .mais-lidos {
+        display: none;
+    }
+
+    .mais-lidos-desktop {
+        display: block;
+    }
+}
