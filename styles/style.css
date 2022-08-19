@@ -48,10 +48,9 @@ a {
 }
 .header-mobile nav.ativo {
   display: flex;
-  position: relative;
+  position: fixed;
   background-color: #000;
-  width: 50%;
-  height: 800px;
+  width: 30%;
 }
 .header-mobile .titulo-principal {
   text-align: center;
@@ -83,10 +82,10 @@ a {
   font-size: 11px;
 }
 .header-mobile .botao-inscreva .inscreva-link {
-  color: hsl(198deg, 35%, 19%);
+  color: #1f3741;
 }
 .header-mobile .botao-inscreva .inscreva-link:hover {
-  color: hsl(345deg, 51%, 40%);
+  color: #9c324d;
 }
 
 @media screen and (min-width: 768px) {
@@ -129,6 +128,9 @@ a {
   .lista-links-desktop a {
     color: #585672;
   }
+  .lista-links-desktop a:hover {
+    color: #9c324d;
+  }
   .link-desktop {
     padding: 20px 0;
   }
@@ -151,6 +153,9 @@ a {
   }
   .botao-inscreva-desktop a {
     color: #000;
+  }
+  .botao-inscreva-desktop a:hover {
+    color: #fff;
   }
 }
 #btn-indicador {
@@ -234,14 +239,14 @@ a {
 .conteudo-principal {
   background-color: #fff;
   margin: 0 16px 15px 16px;
-  height: 1190px;
+  height: 1200px;
 }
 
 @media screen and (min-width: 768px) {
   .conteudo-principal {
     background-color: #fff;
-    margin: 0 16px 15px 16px;
-    height: 2000px;
+    margin: 0 16px 0px 16px;
+    height: 1410px;
     width: 1360px;
     margin: -50px 270px;
   }
@@ -270,13 +275,17 @@ a {
   text-decoration: none;
 }
 
+.slider {
+  margin: 0 45px;
+}
+
 .slick-slide {
   padding: 10px;
+  width: 100%;
 }
 
 .img-carrosel2 {
   width: 100%;
-  max-width: 400px;
 }
 
 .titulo-carrosel2 {
@@ -296,8 +305,8 @@ a {
   width: 181px;
   height: 327px;
   border: 1px solid #bfbfbf;
-  box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .icons-carrosel2 {
@@ -352,7 +361,11 @@ a {
   .continuar a {
     color: #585672;
   }
+  .continuar a:hover {
+    color: #9c324d;
+  }
   .item-inner {
+    margin: 0 auto;
     width: 255px;
     height: 272px;
   }
@@ -366,6 +379,22 @@ a {
   }
   .like-img {
     margin-left: 50px;
+  }
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+  }
+  #prev {
+    position: absolute;
+    bottom: 150px;
+    left: 80px;
+  }
+  #next {
+    position: absolute;
+    bottom: 150px;
+    right: 80px;
   }
 }
 .mais-lidos {
@@ -394,12 +423,12 @@ a {
 
 .mais-lidos-cards {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 366px;
   height: 186px;
   border: 1px solid #bfbfbf;
   border-radius: 5px;
   margin: 0 8px 16px 8px;
-  grid-template-columns: 1fr 1fr;
   cursor: pointer;
 }
 
@@ -479,6 +508,13 @@ a {
   #mais-lidos-titulo {
     margin-left: 16px;
   }
+  .itens-grid {
+    width: 255px;
+    height: 272px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   #ver-tudo-lidos {
     margin-right: 16px;
   }
@@ -487,6 +523,13 @@ a {
   }
   .mais-lidos-desktop {
     display: block;
+  }
+  .mais-lidos-cards-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 22px;
+    margin: 150px;
+    margin-top: 38px;
   }
 }
 .conteudo-footer {
@@ -506,6 +549,7 @@ a {
   text-decoration: underline;
   font-weight: 600;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .insta {
@@ -589,6 +633,9 @@ a {
   padding: 6px 11px;
   margin: 0 auto;
 }
+.btn-inscreva:hover {
+  color: #f4c324;
+}
 
 .footer-final {
   background-color: #9c324d;
@@ -636,9 +683,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .conteudo-footer {
+    margin-top: 60px;
+  }
   .insta {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
   .smile-img {
     margin-left: 25px;
@@ -689,7 +740,10 @@ a {
     display: none;
   }
   .img-full-desktop {
-    width: auto;
+    background-image: url(/assets/img-curso-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .img-curso-desktop {
     display: flex;

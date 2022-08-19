@@ -24,12 +24,12 @@
 
 .mais-lidos-cards {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 366px;
     height: 186px;
     border: 1px solid #bfbfbf;
     border-radius: 5px;
     margin: 0 8px 16px 8px;
-    grid-template-columns: 1fr 1fr;
     cursor: pointer;
 }
 
@@ -109,6 +109,14 @@
         margin-left: 16px;
     }
 
+    .itens-grid {
+        width: 255px;
+        height: 272px;
+        border: 1px solid #bfbfbf;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
     #ver-tudo-lidos {
         margin-right: 16px;
     }
@@ -119,5 +127,12 @@
 
     .mais-lidos-desktop {
         display: block;
+    }
+    .mais-lidos-cards-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 22px;
+        margin: 150px;
+        margin-top: 38px;
     }
 }

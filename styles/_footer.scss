@@ -15,6 +15,7 @@
     text-decoration: underline;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .insta {
@@ -103,6 +104,10 @@
     align-items: center;
     padding: 6px 11px;
     margin: 0 auto;
+
+    &:hover {
+        color: #f4c324;
+    }
 }
 
 .footer-final {
@@ -151,9 +156,14 @@
 }
 
 @media screen and(min-width:768px) {
+    .conteudo-footer {
+        margin-top: 60px;
+    }
+
     .insta {
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     .smile-img {
@@ -216,7 +226,10 @@
     }
 
     .img-full-desktop {
-        width: auto;
+        background-image: url(/assets/img-curso-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .img-curso-desktop {
