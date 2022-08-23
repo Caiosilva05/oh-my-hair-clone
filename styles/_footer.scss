@@ -147,12 +147,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0 0 40px 0;
 }
 
 .up {
-    font-weight: 600;
-    font-size: 13px;
-    padding: 10px;
+    margin-left: 4px;
 }
 
 @media screen and(min-width:768px) {
@@ -258,7 +259,7 @@
         }
 
         .flex-footer {
-            margin: 32px 68px 32px 0;
+            margin: 64px 68px 32px 0;
         }
     }
 }

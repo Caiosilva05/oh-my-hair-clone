@@ -29,6 +29,8 @@ a {
   position: relative;
 }
 .header-mobile #botao-menu {
+  position: relative;
+  z-index: 10;
   width: 36px;
   height: 36px;
   margin-top: 21px;
@@ -37,20 +39,73 @@ a {
 .header-mobile .nav-mobile {
   display: none;
   position: relative;
-  z-index: 2;
+}
+.header-mobile .bem-vindo {
+  font-weight: 300;
+  font-size: 13px;
+  color: #38505a;
+  margin-left: 18px;
+}
+.header-mobile .login a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #585672;
+  margin-left: 10px;
+}
+.header-mobile ul {
+  margin: 0;
+  padding: 0;
 }
 .header-mobile .lista-links {
   font-size: 16px;
   font-weight: 600;
   color: hsl(244deg, 14%, 39%);
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   position: absolute;
 }
-.header-mobile nav.ativo {
+.header-mobile .lista-links .link-menu:hover {
+  color: #9c324d;
+}
+.header-mobile .lista-links .icon-menu {
+  margin: 0 8px 0 17px;
+}
+.header-mobile .lista-links .ir-menu {
+  position: absolute;
+  margin-top: 5px;
+  left: 270px;
+}
+.header-mobile .hair-code {
+  margin-top: 570px;
+  margin-left: 18px;
+}
+.header-mobile .open {
   display: flex;
-  position: fixed;
-  background-color: #000;
-  width: 30%;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  width: 299.01px;
+  height: 814px;
+  z-index: 5;
+  padding-top: 50px;
+}
+.header-mobile .back-input-mobile {
+  position: relative;
+  width: 267.01px;
+  height: 48px;
+  margin: 16px 16px 20px 18px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.header-mobile .input-header {
+  position: absolute;
+  top: -12.5px;
+  width: 251.01px;
+  height: 32px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  margin: 20px 0 20px 8px;
 }
 .header-mobile .titulo-principal {
   text-align: center;
@@ -674,12 +729,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 0 40px 0;
 }
 
 .up {
-  font-weight: 600;
-  font-size: 13px;
-  padding: 10px;
+  margin-left: 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -768,6 +824,6 @@ a {
     margin: 32px 0;
   }
   .footer-final .flex-footer {
-    margin: 32px 68px 32px 0;
+    margin: 64px 68px 32px 0;
   }
 }/*# sourceMappingURL=style.css.map */
