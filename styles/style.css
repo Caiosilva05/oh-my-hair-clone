@@ -30,7 +30,7 @@ a {
 }
 .header-mobile #botao-menu {
   position: relative;
-  z-index: 10;
+  z-index: 150;
   width: 36px;
   height: 36px;
   margin-top: 21px;
@@ -51,6 +51,9 @@ a {
   font-size: 13px;
   color: #585672;
   margin-left: 10px;
+}
+.header-mobile .login a:hover {
+  color: #9c324d;
 }
 .header-mobile ul {
   margin: 0;
@@ -76,9 +79,23 @@ a {
   margin-top: 5px;
   left: 270px;
 }
+.header-mobile .lista-links .dropdown {
+  line-height: 200%;
+}
+.header-mobile .lista-links .dropdown .itens-drop {
+  display: block;
+  margin-left: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #585672;
+}
+.header-mobile .lista-links .dropdown .itens-drop:hover {
+  color: #9c324d;
+}
 .header-mobile .hair-code {
-  margin-top: 570px;
   margin-left: 18px;
+  width: 64px;
+  height: 11.64px;
 }
 .header-mobile .open {
   display: flex;
@@ -86,8 +103,8 @@ a {
   background-color: #fff;
   position: absolute;
   width: 299.01px;
-  height: 814px;
-  z-index: 5;
+  height: 950px;
+  z-index: 100;
   padding-top: 50px;
 }
 .header-mobile .back-input-mobile {
@@ -419,6 +436,10 @@ a {
   .continuar a:hover {
     color: #9c324d;
   }
+  .card {
+    border: none;
+    margin: 0 250px;
+  }
   .item-inner {
     margin: 0 auto;
     width: 255px;
@@ -437,19 +458,18 @@ a {
   }
   .arrows {
     display: flex;
-    justify-content: space-between;
     position: relative;
     cursor: pointer;
   }
   #prev {
     position: absolute;
     bottom: 150px;
-    left: 80px;
+    left: 210px;
   }
   #next {
     position: absolute;
     bottom: 150px;
-    right: 80px;
+    right: 210px;
   }
 }
 .mais-lidos {

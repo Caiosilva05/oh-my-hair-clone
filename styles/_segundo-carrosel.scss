@@ -118,6 +118,11 @@
         }
     }
 
+    .card {
+        border: none;
+        margin: 0 250px;
+    }
+
     .item-inner {
         margin: 0 auto;
         width: 255px;
@@ -140,7 +145,6 @@
 
     .arrows {
         display: flex;
-        justify-content: space-between;
         position: relative;
         cursor: pointer;
     }
@@ -148,12 +152,12 @@
     #prev {
         position: absolute;
         bottom: 150px;
-        left: 80px;
+        left: 210px;
     }
 
     #next {
         position: absolute;
         bottom: 150px;
-        right: 80px;
+        right: 210px;
     }
 }

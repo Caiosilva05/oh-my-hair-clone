@@ -11,7 +11,7 @@
 
     #botao-menu {
         position: relative;
-        z-index: 10;
+        z-index: 150;
         width: 36px;
         height: 36px;
         margin-top: 21px;
@@ -35,6 +35,9 @@
         font-size: 13px;
         color: #585672;
         margin-left: 10px;
+        &:hover {
+            color: #9c324d;
+        }
     }
     ul {
         margin: 0;
@@ -62,10 +65,28 @@
             margin-top: 5px;
             left: 270px;
         }
+
+        .dropdown {
+            line-height: 200%;
+
+            .itens-drop {
+                display: block;
+                margin-left: 60px;
+                font-weight: 300;
+                font-size: 16px;
+                color: #585672;
+
+                &:hover {
+                    color: #9c324d;
+                }
+            }
+        }
     }
+
     .hair-code {
-        margin-top: 570px;
         margin-left: 18px;
+        width: 64px;
+        height: 11.64px;
     }
 
     .open {
@@ -74,8 +95,8 @@
         background-color: #fff;
         position: absolute;
         width: 299.01px;
-        height: 814px;
-        z-index: 5;
+        height: 950px;
+        z-index: 100;
         padding-top: 50px;
     }
     .back-input-mobile {
