@@ -97,7 +97,8 @@
         width: 299.01px;
         height: 950px;
         z-index: 100;
-        padding-top: 50px;
+        padding-top: 60px;
+        transition: all 0.5s ease-in-out;
     }
     .back-input-mobile {
         position: relative;
@@ -120,24 +121,8 @@
 
     .titulo-principal {
         text-align: center;
-        font-size: 30px;
-        font-weight: bold;
         display: inline-block;
         margin-top: 21px;
-        .span1 {
-            color: hsla(261, 29%, 56%, 1);
-        }
-
-        .span2 {
-            color: hsla(195, 65%, 75%, 1);
-        }
-        .span3 {
-            color: hsla(41, 69%, 62%, 1);
-        }
-
-        .exclamacao {
-            color: hsla(126, 25%, 41%, 1);
-        }
     }
 
     .botao-inscreva {
@@ -176,24 +161,7 @@
     }
 
     .titulo-principal-desktop {
-        font-size: 48px;
-        font-weight: bold;
-        margin-left: 165px;
-
-        .span1 {
-            color: hsla(261, 29%, 56%, 1);
-        }
-
-        .span2 {
-            color: hsla(195, 65%, 75%, 1);
-        }
-        .span3 {
-            color: hsla(41, 69%, 62%, 1);
-        }
-
-        .exclamacao {
-            color: hsla(126, 25%, 41%, 1);
-        }
+        margin-left: 250px;
     }
 
     .lista-links-desktop {
