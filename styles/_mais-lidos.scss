@@ -13,6 +13,7 @@
 #mais-lidos-titulo {
     font-size: 28px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #ver-tudo-lidos a {
@@ -20,6 +21,9 @@
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
+    &:hover {
+        color: #9c324d;
+    }
 }
 
 .mais-lidos-cards {
@@ -107,6 +111,7 @@
 @media screen and (min-width: 768px) {
     #mais-lidos-titulo {
         margin-left: 16px;
+        cursor: pointer;
     }
 
     .itens-grid {

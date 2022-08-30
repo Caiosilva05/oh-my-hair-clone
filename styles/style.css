@@ -37,8 +37,20 @@ a {
   margin-left: 13px;
 }
 .header-mobile .nav-mobile {
-  display: none;
-  position: relative;
+  position: absolute;
+  visibility: hidden;
+  left: -299.01px;
+  width: 299.01px;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+}
+.header-mobile .open {
+  background-color: #fff;
+  height: 950px;
+  z-index: 100;
+  padding-top: 60px;
+  visibility: visible;
+  transform: translateX(100%);
 }
 .header-mobile .bem-vindo {
   font-weight: 300;
@@ -96,17 +108,6 @@ a {
   margin-left: 18px;
   width: 64px;
   height: 11.64px;
-}
-.header-mobile .open {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  position: absolute;
-  width: 299.01px;
-  height: 950px;
-  z-index: 100;
-  padding-top: 60px;
-  transition: all 0.5s ease-in-out;
 }
 .header-mobile .back-input-mobile {
   position: relative;
@@ -211,7 +212,6 @@ a {
 
 .img-carrosel {
   width: 100%;
-  max-width: 500px;
 }
 
 .texto-carrosel {
@@ -319,6 +319,9 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
+#ver-tudo-recente a:hover {
+  color: #9c324d;
+}
 
 .slider {
   margin: 0 50px;
@@ -400,9 +403,13 @@ a {
     font-size: 28px;
     margin-left: 16px;
     font-weight: 600;
+    cursor: pointer;
   }
   #ver-tudo-recente a {
     margin-right: 16px;
+  }
+  #ver-tudo-recente a:hover {
+    color: #9c324d;
   }
   .continuar a {
     color: #585672;
@@ -461,6 +468,7 @@ a {
 #mais-lidos-titulo {
   font-size: 28px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #ver-tudo-lidos a {
@@ -468,6 +476,9 @@ a {
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
+}
+#ver-tudo-lidos a:hover {
+  color: #9c324d;
 }
 
 .mais-lidos-cards {
@@ -556,6 +567,7 @@ a {
 @media screen and (min-width: 768px) {
   #mais-lidos-titulo {
     margin-left: 16px;
+    cursor: pointer;
   }
   .itens-grid {
     width: 255px;
@@ -625,10 +637,12 @@ a {
   font-weight: 600;
   margin: 26px 0 0 16px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .img-arrow-down {
   margin-left: 80px;
+  cursor: pointer;
 }
 
 .img-arrow-right {

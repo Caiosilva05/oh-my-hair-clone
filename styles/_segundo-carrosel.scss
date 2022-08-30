@@ -20,6 +20,10 @@
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
+
+    &:hover {
+        color: #9c324d;
+    }
 }
 
 .slider {
@@ -105,10 +109,14 @@
         font-size: 28px;
         margin-left: 16px;
         font-weight: 600;
+        cursor: pointer;
     }
 
     #ver-tudo-recente a {
         margin-right: 16px;
+        &:hover {
+            color: #9c324d;
+        }
     }
 
     .continuar a {

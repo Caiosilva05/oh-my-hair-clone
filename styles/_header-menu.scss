@@ -19,8 +19,21 @@
     }
 
     .nav-mobile {
-        display: none;
-        position: relative;
+        position: absolute;
+        visibility: hidden;
+        left: -299.01px;
+        width: 299.01px;
+        transition: transform 0.5s;
+        transform: translateX(-100%);
+    }
+
+    .open {
+        background-color: #fff;
+        height: 950px;
+        z-index: 100;
+        padding-top: 60px;
+        visibility: visible;
+        transform: translateX(100%);
     }
 
     .bem-vindo {
@@ -89,17 +102,6 @@
         height: 11.64px;
     }
 
-    .open {
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        width: 299.01px;
-        height: 950px;
-        z-index: 100;
-        padding-top: 60px;
-        transition: all 0.5s ease-in-out;
-    }
     .back-input-mobile {
         position: relative;
         width: 267.01px;
